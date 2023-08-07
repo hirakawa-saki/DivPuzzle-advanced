@@ -3,7 +3,7 @@
   display: block;
   clear: both;
   height: 0;
-	visibility: hidden;
+  visibility: hidden;
 }
 
 body {
@@ -20,46 +20,31 @@ body {
 .header {
   background-color: #ff0000;
   height: 100px;
+  position: relative;
 }
 
 .header-container {
-  width: 160px;
-  height: 60px;
-  background-color: #fff;
-  position: relative;
-  left:220px;
+  background: #ffff;
+  position: absolute;
+  left: 220px;
   top: 20px;
 
 }
-  
-.item1 {
+
+.item {
   background-color: #a9004b;
   width: 40px;
   height: 40px;
-  position: absolute;
-  left:10px;
-  top: 10px;
-  
+  float: left;
+  margin: 10px;
 }
 
-.item2 {
-  background-color: #a9004b;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 60px;
-  top: 10px;
-  
+.item:not(:first-child) {
+  margin-left: 5px;
 }
 
-.item3 {
-  background-color: #a9004b;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: 110px;
-  top: 10px;
-  
+.item:not(:last-child) {
+  margin-right: 5px;
 }
 
 
@@ -80,38 +65,21 @@ body {
   width: 250px;
   height: 250px;
   float: left;
+  position: relative;
 }
 
 .main-right-wapper {
-  position: relative;
+  position: absolute;
   top: 40px;
   left: 40px;
 }
 
-.topic1 {
+.topic {
   background-color: #ff863f;
   width: 140px;
   height: 40px;
-  position: absolute;
   border: 5px solid #fff;
-}
-
-.topic2 {
-  background-color: #ff863f;
-  width: 140px;
-  height: 40px;
-  position: absolute;
-  top:60px;
-  border: 5px solid #fff;
-}
-
-.topic3 {
-  background-color: #ff863f;
-  width: 140px;
-  height: 40px;
-  position: absolute;
-  top:120px;
-  border: 5px solid #fff;
+  margin-bottom: 10px;
 }
 
 
